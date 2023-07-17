@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  background-color: rgb(32, 40, 66);
+}
+ul,
+li {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 5px;
+  margin-left: 20px;
+}
+.logo {
+  margin-left: 10px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: "Courier New", Courier, monospace;
+}
+.menu-hambur {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  opacity: 0;
+}
+.line1,
+.line2,
+.line3 {
+  width: 32px;
+  height: 3px;
+  background-color: white;
+  margin: 2.5px;
+}
