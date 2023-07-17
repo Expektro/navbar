@@ -8,10 +8,10 @@ class MobileNavbar {
   }
   animateLinks() {
     this.NavLinks.forEach((link, index) => {
-      link.style.animaton
-        ? (link.style.animaton = "")
-        : (link.style.animaton = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.7
+      link.style.animation
+        ? (link.style.animation = "")
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
           }s`);
     });
   }
