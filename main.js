@@ -36,3 +36,32 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li"
 );
 mobileNavbar.init();
+
+var contatos = document.querySelector(".Contatos");
+var d_contatos = document.querySelector(".D-contatos");
+contatos.addEventListener("mouseenter", () => {
+  if (contatos.classList.contains("aleat")) {
+    contatos.classList.add("hovado");
+    contatos.classList.remove("aleat");
+    d_contatos.classList.remove("hide");
+    d_contatos.classList.add("hovado");
+  } else {
+    contatos.classList.remove("hovado");
+    contatos.classList.add("aleat");
+    d_contatos.classList.remove("hovado");
+    d_contatos.classList.add("hide");
+  }
+});
+contatos.addEventListener("mouseout", () => {
+  if (contatos.classList.contains("aleat")) {
+    contatos.classList.add("hovado");
+    contatos.classList.remove("aleat");
+    d_contatos.classList.remove("hide");
+    d_contatos.classList.add("hovado");
+  } else {
+    contatos.classList.remove("hovado");
+    contatos.classList.add("aleat");
+    d_contatos.classList.remove("hovado");
+    d_contatos.classList.add("hide");
+  }
+});

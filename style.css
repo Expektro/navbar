@@ -95,3 +95,24 @@ main {
 .menu-mobile.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
+.nav-list .Contatos:hover {
+  background-color: rgb(32, 40, 66);
+}
+.D-contatos {
+  background-color: rgb(32, 40, 66);
+  height: 260px;
+  width: 115px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 5%;
+  opacity: 0.7;
+  transition: transform 0.3 ease-in;
+}
+.hovado {
+  display: flex;
+}
+.hide {
+  display: none;
+}
