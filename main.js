@@ -36,7 +36,7 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li"
 );
 mobileNavbar.init();
-
+//menu contatos//
 var contatos = document.querySelector(".Contatos");
 var d_contatos = document.querySelector(".D-contatos");
 contatos.addEventListener("mouseenter", () => {
@@ -61,6 +61,19 @@ contatos.addEventListener("mouseout", () => {
   } else {
     contatos.classList.remove("hovado");
     contatos.classList.add("aleat");
+    d_contatos.classList.remove("hovado");
+    d_contatos.classList.add("hide");
+  }
+});
+d_contatos.addEventListener("mouseenter", () => {
+  if (d_contatos.classList.contains("hide")) {
+    d_contatos.classList.remove("hide");
+    d_contatos.classList.add("hovado");
+  }
+});
+
+d_contatos.addEventListener("mouseleave", () => {
+  if (d_contatos.classList.contains("hovado")) {
     d_contatos.classList.remove("hovado");
     d_contatos.classList.add("hide");
   }

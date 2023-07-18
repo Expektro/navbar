@@ -112,7 +112,7 @@ li {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 a:hover {
-  animation: zom 0.5s infinite;
+  animation: zom 0.7s;
 }
 .D-contatos {
   background-color: rgb(32, 40, 66);
