@@ -26,6 +26,9 @@
   #D-contatos {
     display: none;
   }
+  #boas {
+    width: 75%;
+  }
 }
 @keyframes navLinkFade {
   from {
@@ -57,7 +60,7 @@ body {
   overflow-x: hidden;
 }
 a {
-  color: white;
+  color: wheat;
   text-decoration: none;
   font-size: 20px;
   padding: 5px;
@@ -76,6 +79,7 @@ li {
   letter-spacing: 5px;
   margin-left: 20px;
   list-style: none;
+  margin-right: 3px;
 }
 .logo {
   margin-left: 10px;
@@ -90,7 +94,7 @@ li {
 .menu-mobile div {
   width: 32px;
   height: 3px;
-  background-color: white;
+  background-color: wheat;
   margin: 7px;
   transition: 0.3s;
 }
@@ -98,6 +102,8 @@ li {
   height: 150vh;
   background-color: rgba(29, 123, 98, 0.585);
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 .nav-list.active {
   transform: translateY(0);
@@ -114,10 +120,11 @@ li {
 a:hover {
   animation: zom 0.7s;
 }
-.D-contatos {
+.D-contatos,
+.D-generos {
   background-color: rgb(32, 40, 66);
   height: 260px;
-  width: 115px;
+  width: 118px;
   position: absolute;
   flex-direction: column;
   justify-content: space-evenly;
@@ -132,24 +139,14 @@ a:hover {
 .hide {
   display: none;
 }
-.c1 {
-  background: url(https://i.pinimg.com/564x/1d/c9/b8/1dc9b841e96d4ac964829af9eb0c1efc.jpg)
-    no-repeat center center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-}
-.c2 {
-  background: url(https://i.pinimg.com/564x/c4/7d/d9/c47dd91060de908e0ecd1f484ad40bdf.jpg)
-    no-repeat center center;
-  background-size: cover;
-}
-.c3 {
-  background: url(https://i.pinimg.com/564x/be/3b/8a/be3b8a258b7684f5fd43c4f981cf1317.jpg)
-    no-repeat center center;
-  background-size: cover;
-}
+
 h1 {
   color: rgb(5, 5, 5);
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.boas {
+  width: 60%;
+  height: 40%;
+  background-color: wheat;
+  margin-top: 10%;
 }

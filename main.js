@@ -78,3 +78,45 @@ d_contatos.addEventListener("mouseleave", () => {
     d_contatos.classList.add("hide");
   }
 });
+//menu generos
+var generos = document.querySelector(".Generos");
+var d_generos = document.querySelector(".D-generos");
+generos.addEventListener("mouseenter", () => {
+  if (generos.classList.contains("aleat")) {
+    generos.classList.add("hovado");
+    generos.classList.remove("aleat");
+    d_generos.classList.remove("hide");
+    d_generos.classList.add("hovado");
+  } else {
+    generos.classList.remove("hovado");
+    generos.classList.add("aleat");
+    d_generos.classList.remove("hovado");
+    d_generos.classList.add("hide");
+  }
+});
+generos.addEventListener("mouseout", () => {
+  if (generos.classList.contains("aleat")) {
+    generos.classList.add("hovado");
+    generos.classList.remove("aleat");
+    d_generos.classList.remove("hide");
+    d_generos.classList.add("hovado");
+  } else {
+    generos.classList.remove("hovado");
+    generos.classList.add("aleat");
+    d_generos.classList.remove("hovado");
+    d_generos.classList.add("hide");
+  }
+});
+d_generos.addEventListener("mouseenter", () => {
+  if (d_generos.classList.contains("hide")) {
+    d_generos.classList.remove("hide");
+    d_generos.classList.add("hovado");
+  }
+});
+
+d_generos.addEventListener("mouseleave", () => {
+  if (d_generos.classList.contains("hovado")) {
+    d_generos.classList.remove("hovado");
+    d_generos.classList.add("hide");
+  }
+});
