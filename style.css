@@ -23,7 +23,8 @@
   #menu-mobile {
     display: block;
   }
-  #D-contatos {
+  #D-contatos,
+  #D-generos {
     display: none;
   }
   #boas {
