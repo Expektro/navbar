@@ -28,7 +28,7 @@
     display: none;
   }
   #boas {
-    width: 75%;
+    min-width: 330px;
   }
 }
 @keyframes navLinkFade {
@@ -150,4 +150,9 @@ h1 {
   height: 40%;
   background-color: wheat;
   margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 1px;
+  padding: 20px;
 }

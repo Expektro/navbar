@@ -36,9 +36,12 @@ const mobileNavbar = new MobileNavbar(
   ".nav-list li"
 );
 mobileNavbar.init();
+
 //menu contatos//
+
 var contatos = document.querySelector(".Contatos");
 var d_contatos = document.querySelector(".D-contatos");
+
 function menuContatos() {
   contatos.classList.toggle("hovado");
   d_contatos.classList.toggle("hide");
@@ -49,9 +52,11 @@ contatos.addEventListener("mouseout", menuContatos);
 d_contatos.addEventListener("mouseenter", menuContatos);
 d_contatos.addEventListener("mouseleave", menuContatos);
 
-//menu generos
+//menu generos//
+
 var generos = document.querySelector(".Generos");
 var d_generos = document.querySelector(".D-generos");
+
 function menuGeneros() {
   generos.classList.toggle("hovado");
   d_generos.classList.toggle("hide");
